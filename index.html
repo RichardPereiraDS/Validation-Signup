@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="signup">
+            <div class="logo">
+                <a class="logo__link" href="/"></a>
+            </div>
+            <h1 class="signup__title">Cadastre-Se</h1>
+            <form class="form" data-form>
+                <div class="form__group">
+                    <label class="form__label hide" for="inputName">Nome</label>
+                    <input type="text" name="name" class="form__input-text " id="inputName" placeholder="Nome" required data-input/>
+                    <i class="form__input-icon fas fa-user"></i>
+                    <span class="form__message-error" data-error-message></span>
+                </div>
+                <div class="form__group">
+                    <label class="form__label hide" for="inputEmail">Email</label>
+                    <input type="email" name="email" class="form__input-text" id="inputEmail" placeholder="Email" required data-input />
+                    <i class="form__input-icon fas fa-envelope"></i>
+                    <span class="form__message-error" data-error-message></span>
+                </div>
+                <div class="form__group">
+                    <label class="form__label hide" for="inputPassword">Senha</label>
+                    <input type="password" name="password" class="form__input-text" id="inputPassword" placeholder="Senha" required data-input/>
+                    <i class="form__input-icon fas fa-lock"></i>
+                    <i class="form__input-icon fas fa-eye slash" data-password-eye></i>
+                    <span class="form__message-error" data-error-message></span>
+                    <div class="requirements">
+                        <div class="requirements__progressbar" data-requirement-progressbar data-percentage="0"></div>
+                        <div class="requirements__description">A senha deverá ter</div>
+                        <ul class="requirements__list">
+                            <li class="requirements__iten" data-requirement-iten="lowerUpperCase">
+                                <i class="fas "></i>
+                                Pelo menos 1 letra maiúscula e 1 letra minúscula</li>
+                            <li class="requirements__iten" data-requirement-iten="number">
+                                <i class="fas "></i>
+                                Pelo menos 1 número</li>
+                            <li class="requirements__iten" data-requirement-iten="specialCharacter">
+                                <i class="fas k"></i>
+                                Pelo menos 1 caracter especial</li>
+                            <li class="requirements__iten" data-requirement-iten="minCharacter">
+                                <i class="fas "></i>
+                                Pelo menos 8 caracteres</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form__group">
+                    <input type="checkbox" name="terms" class="form__input-checkbox" id="inputTerms" required data-input/>
+                    <label class="form__label" for="inputTerms">Concordo com os <a class="form__link" href="/">Termos</a> e <a class="form__link" href="/">Política de Privacidade</a></label>
+                    <span class="form__message-error" data-error-message>Campo Obrigatorio</span>
+                </div>
+                <div class="form__group form_group--center">
+                    <button class="form__button-submit" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/show-password.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+</body>
+</html>
