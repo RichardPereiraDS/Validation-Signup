@@ -18,7 +18,7 @@
 
 ## Sobre o Repositório
 
-Este é um repositório contendo Uma Validação de cadastro ou seja, Validação de nome,email e senha forte.
+Este é um Projeto que fiz com a intenção de validar dados enviados pelo usuario ao efetuar um cadastro.
 
 ---
 
